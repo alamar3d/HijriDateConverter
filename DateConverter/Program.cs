@@ -7,10 +7,10 @@ internal class Program
         try
         {
             // Define the Hijri calendar
-            UmAlQuraCalendar hijriCalendar = new UmAlQuraCalendar();
+            UmAlQuraCalendar hijriCalendar = new();
 
             // Specify the Hijri date format
-            CultureInfo hijriCulture = new CultureInfo("ar-SA");
+            CultureInfo hijriCulture = new("ar-SA");
             hijriCulture.DateTimeFormat.Calendar = hijriCalendar;
 
             // Parse the Hijri date
